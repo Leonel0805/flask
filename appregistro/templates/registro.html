@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Pagina de registros</title>
+</head>
+<body>
+    <h1>Registro: </h1>
+    <form action="", method="POST">
+
+        {% for item in formulariolol %}
+        <li>
+            {{item.label}}: {{item}}
+        </li>
+
+        {% endfor%}
+
+        <button>Enviar registro</button>
+    </form>
+    
+</body>
+</html>
